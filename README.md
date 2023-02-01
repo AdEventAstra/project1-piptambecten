@@ -12,9 +12,9 @@ Our group will use everything we’ve learned to create a real-world front-end a
 
 
 ## User story 
-AS AN astrology enthusiast
-I WANT to see the horoscope outlook for multiple days
-SO THAT I can view my predictions accordingly
+* AS AN astrology enthusiast
+* I WANT to see the horoscope outlook for multiple days
+* SO THAT I can view my predictions accordingly
 
 ## Technologies used
 What were the technologies used? How were tasks and roles broken down and assigned? What challenges did we encounter? What were our successes?
@@ -22,5 +22,15 @@ What were the technologies used? How were tasks and roles broken down and assign
 ## Demo
 
 <!-- screenshot and URL -->
+
+## Licence
+MIT Licence
+
+## Authors
+
+## References
+
+## Credits
+
 
 
