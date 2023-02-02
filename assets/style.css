@@ -6,9 +6,10 @@
 
 /* Tamara's work right-side */
 .card-body {
-    background-color:grey;
+    background: rgb(240,248,255);
+    background: linear-gradient(0deg, rgba(240,248,255,1) 47%, rgba(148,187,233,1) 100%);
 }
 
 .card-text {
-    color: white;
+    color: #4C516D;
 }
