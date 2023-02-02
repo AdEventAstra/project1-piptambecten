@@ -5,3 +5,10 @@
 /* Patricia's work left-side */
 
 /* Tamara's work right-side */
+.card-body {
+    background-color:grey;
+}
+
+.card-text {
+    color: white;
+}
