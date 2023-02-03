@@ -1,7 +1,14 @@
-/* Rebecca's work navbar */
-
-/* Tennisson's work NASA */
-
-/* Patricia's work left-side */
+body{
+    background-color: black;
+}
+#star-sign{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: blueviolet;
+    font-size: 50px;
+    margin: 100px;
+    color: red;
+}
 
 /* Tamara's work right-side */
