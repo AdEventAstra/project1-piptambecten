@@ -22,6 +22,8 @@ What were the technologies used? How were tasks and roles broken down and assign
 ## Demo
 
 <!-- screenshot and URL -->
+URL of deployed application:
+https://adeventastra.github.io/project1-piptambecten/
 
 ## Licence
 MIT Licence
@@ -34,3 +36,4 @@ MIT Licence
 
 
 
+<a href="https://www.flaticon.com/free-icons/capricorn" title="capricorn icons">Capricorn icons created by Freepik - Flaticon</a>
