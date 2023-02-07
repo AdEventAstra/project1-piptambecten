@@ -62,7 +62,16 @@ h1{
 
 }
 .card-text {
+
+    color: #4C516D;
+}
+/* NASA */
+body {
+background-repeat:no-repeat;
+background-size: cover;
+
     font-family: 'Martel', serif;
     color: #F2F2F2;
     font-size: 30px;
+
 }
