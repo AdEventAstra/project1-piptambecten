@@ -1,4 +1,21 @@
-// Rebecca's work navbar
+// Rebecca's work navbar buttons
+//let startButton = document.querySelector("#start");
+
+let aries = document.querySelector("#aries");
+let taurus = document.querySelector("#taurus");
+let gemini = document.querySelector("#gemini");
+let cancer = document.querySelector("#cancer");
+let leo = document.querySelector("#leo");
+let virgo = document.querySelector("#virgo");
+let scorpio = document.querySelector("#scorpio");
+let sagittarius = document.querySelector("#sagittarius");
+let capricorn = document.querySelector("#capricorn");
+let aquarius = document.querySelector("#aquarius");
+let pisces = document.querySelector("#pisces");
+
+
+
+
 
 // Tennisson's work NASA
 
