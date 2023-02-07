@@ -36,3 +36,4 @@ MIT Licence
 
 
 
+<a href="https://www.flaticon.com/free-icons/capricorn" title="capricorn icons">Capricorn icons created by Freepik - Flaticon</a>

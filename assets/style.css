@@ -10,6 +10,7 @@ body{
     font-size: 50px;
     margin: 100px;
     color: red;
+    background-image: url(./capricorn.png);
 }
 /* Rebecca's work navbar */
 button {
