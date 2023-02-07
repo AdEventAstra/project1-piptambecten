@@ -59,5 +59,6 @@ h1{
 }
 /* NASA */
 body {
-background-image:
+background-repeat:no-repeat;
+background-size: cover;
 }
