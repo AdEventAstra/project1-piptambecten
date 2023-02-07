@@ -51,7 +51,7 @@ function getNasa() {
             console.log(response.collection.items[0].links[0]);
             let imageNasa = response.collection.items[0].links[0].href;
             //added DOM element to render description on the page
-            // document.querySelector(".API").style.background = imageNasa;
+            document.querySelector("#backgroundNasa").src = imageNasa;
             document.querySelector("body").style.backgroundImage = `url(${imageNasa})`;
             document.querySelector()
 
