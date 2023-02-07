@@ -51,9 +51,17 @@ h1{
 /* Tamara's work right-side */
 .card-body {
     background: rgb(240,248,255);
-    background: linear-gradient(0deg, rgba(240,248,255,1) 47%, rgba(148,187,233,1) 100%);
+    background: linear-gradient(0deg, #4353ab 27%, #0C1940 100%);
 }
 
+.subheading {
+    font-family: 'Martel', serif;
+    color: #F2F2F2;
+    font-size: 40px;
+
+}
 .card-text {
-    color: #4C516D;
+    font-family: 'Martel', serif;
+    color: #F2F2F2;
+    font-size: 30px;
 }
