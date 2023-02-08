@@ -3,15 +3,12 @@ body{
     background-color: black;
 }
 #star-sign{
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-    background-color: blueviolet;
-    font-size: 50px;
-    margin: 100px;
-    color: red;
+    font-family: 'Martel', serif;
+    color: #BA38F2;
+    font-size: 200px;
+    font-family: 'Martel', serif;
 }
-/* Rebecca's work navbar */
+/* navbar */
 button {
     background-color: midnightblue;
     border-color: midnightblue;
@@ -42,13 +39,7 @@ button:hover{
 h1{
     font-size: 80px;
 }
-
-
-/* Tennisson's work NASA */
-
-/* Patricia's work left-side */
-
-/* Tamara's work right-side */
+/* description area */
 .card-body {
     background: rgb(240,248,255);
     background: linear-gradient(0deg, #4353ab 27%, #0C1940 100%);
