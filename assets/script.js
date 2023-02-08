@@ -13,52 +13,27 @@ let capricorn = document.querySelector("#capricorn");
 let aquarius = document.querySelector("#aquarius");
 let pisces = document.querySelector("#pisces");
 
-
-// Patricia's work left-side
-}
-const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
-fetch(URL, {
-    method: 'POST'
-})
-    .then(response => response.json())
-    .then(json => {
-        const date = json.description;
-        console.log(date);
-        var profileUrl = json.description;
-        console.log(profileUrl)
-        var urlText = document.querySelectorId('star-sign')
-        urlText.setAttribute('src', profileUrl)
-        urlText.append('star-sign')
-    });
-
-//need to get the chosen sign from local storage to profile div. 
-
+// star sign profile
+horoscope();
 
 const signProfile = document.getElementById('star-sign');
 console.log(signProfile)
+let starsign = localStorage.getItem("userChoice")
+signProfile.textContent = starsign
 
 displayUserChoice()
-function displayUserChoice () {
-    let sign = localStorage.getItem('Sign')
 
-        signProfile.textContent = sign;
-        console.log('sign')
-    
+function displayUserChoice(userChoice) {
+    localStorage.setItem("userChoice", userChoice)
+    signProfile.textContent = `Star-sign; ${userChoice}`;
 }
-//let btnDsn = document.querySelector("#btn-design");
-//localStorage.setItem('Name','CLICKED');
-//let name = localStorage.getItem('Name');
 
-//(function (){
-	//btnDsn.onclick = function() {
-		//btnDsn.textContent = name;
-	//};
-//})();
+// Horoscope description
 
-// Tamara's work right-side
+function horoscope(userChoice) {
+    userChoice = localStorage.getItem("userChoice");
+    fetch(`https://aztro.sameerkumar.website?sign=${userChoice}&day=today`,
 
-function horoscope() {
-    fetch("https://aztro.sameerkumar.website?sign=aquarius&day=today",
         { method: "POST" }
     )
         .then(response => response.json())
@@ -70,11 +45,14 @@ function horoscope() {
             document.querySelector(".card-text").textContent = description;
         })
         .catch(err => console.error(err));
-
 }
 
-horoscope();
-
+document.querySelector(".button-container").addEventListener('click', function (event) {
+    console.log(event.target);
+    let userChoice = event.target.dataset.sign;
+    displayUserChoice(userChoice)
+    horoscope(userChoice);
+})
 
 // Nasa API
 // https://images-api.nasa.gov/search?q=planets
@@ -83,16 +61,14 @@ function getNasa() {
         .then(response => response.json())
         .then(response => {
             console.log(response);
+            let number = Math.floor(Math.random()*5)
             console.log(response.collection.items[0].links[0]);
-            let imageNasa = response.collection.items[0].links[0].href;
+            let imageNasa = response.collection.items[number].links[0].href;
             //added DOM element to render description on the page
             document.querySelector("#backgroundNasa").src = imageNasa;
             document.querySelector("body").style.backgroundImage = `url("${imageNasa}")`;
-            document.querySelector()
-
         })
         .catch(err => console.error(err));
-
 }
 getNasa();
 
