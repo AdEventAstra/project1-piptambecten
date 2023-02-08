@@ -32,27 +32,28 @@ fetch(URL, {
     });
 
 //need to get the chosen sign from local storage to profile div. 
-const signChoice = document.getElementById('#aries');
-console.log(signChoice)
+
 
 const signProfile = document.getElementById('star-sign');
 console.log(signProfile)
 
-// signChoice.addEventListener('click', displayUserChoice)
-getUserChoice()
-// I think I have to do if or a switch case to tie the buttons to a function I can hook into. 
-function getUserChoice(){
-    localStorage.setItem('Sign', onclick.value)
+displayUserChoice()
+function displayUserChoice () {
     let sign = localStorage.getItem('Sign')
-    console.log(sign)
-    displayUserChoice()
-    function displayUserChoice () {
-        signChoice.onclick = function () {
-            signChoice.textContent = sign;
-            console.log('sign')
-        }
-    }
+
+        signProfile.textContent = sign;
+        console.log('sign')
+    
 }
+//let btnDsn = document.querySelector("#btn-design");
+//localStorage.setItem('Name','CLICKED');
+//let name = localStorage.getItem('Name');
+
+//(function (){
+	//btnDsn.onclick = function() {
+		//btnDsn.textContent = name;
+	//};
+//})();
 
 // Tamara's work right-side
 
