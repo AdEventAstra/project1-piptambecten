@@ -12,20 +12,49 @@ let sagittarius = document.querySelector("#sagittarius");
 let capricorn = document.querySelector("#capricorn");
 let aquarius = document.querySelector("#aquarius");
 let pisces = document.querySelector("#pisces");
+nasa-api
 
 
 
 
+
+main
 
 // Tennisson's work NASA
 
 // Patricia's work left-side
+ nasa-api
+
+//need to get the chosen sign from local storage to profile div. 
+const signChoice = document.getElementById('#aries');
+console.log(signChoice)
+
+const signProfile = document.getElementById('star-sign');
+console.log(signProfile)
+
+// signChoice.addEventListener('click', displayUserChoice)
+getUserChoice()
+// I think I have to do if or a switch case to tie the buttons to a function I can hook into. 
+function getUserChoice(){
+    localStorage.setItem('Sign', onclick.value)
+    let sign = localStorage.getItem('Sign')
+    console.log(Sign)
+    displayUserChoice()
+    function displayUserChoice () {
+        signChoice.onclick = function () {
+            signChoice.textContent = sign;
+            console.log('sign')
+        }
+    }
+}
+=======
 // fetch("https://aztro.sameerkumar.website/?sign=aquarius&date_range=aquarius")
 // .then(response => response.json())
 // .then(function(response){
 //    
 // })
 
+ main
 const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
 fetch(URL, {
     method: 'POST'
