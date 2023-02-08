@@ -12,14 +12,17 @@ let sagittarius = document.querySelector("#sagittarius");
 let capricorn = document.querySelector("#capricorn");
 let aquarius = document.querySelector("#aquarius");
 let pisces = document.querySelector("#pisces");
+
 // star sign profile
 horoscope();
+
 const signProfile = document.getElementById('star-sign');
 console.log(signProfile)
 let starsign = localStorage.getItem("userChoice")
 signProfile.textContent = starsign
 
 displayUserChoice()
+
 function displayUserChoice(userChoice) {
     localStorage.setItem("userChoice", userChoice)
     signProfile.textContent = `Star-sign; ${userChoice}`;
@@ -30,6 +33,7 @@ function displayUserChoice(userChoice) {
 function horoscope(userChoice) {
     userChoice = localStorage.getItem("userChoice");
     fetch(`https://aztro.sameerkumar.website?sign=${userChoice}&day=today`,
+
         { method: "POST" }
     )
         .then(response => response.json())
@@ -67,5 +71,4 @@ function getNasa() {
         .catch(err => console.error(err));
 }
 getNasa();
-
 
