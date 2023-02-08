@@ -24,8 +24,13 @@ signProfile.textContent = starsign
 displayUserChoice()
 
 function displayUserChoice(userChoice) {
-    localStorage.setItem("userChoice", userChoice)
-    signProfile.textContent = `Star-sign; ${userChoice}`;
+    if (!userChoice) {
+        signProfile.textContent = " "
+    } else {
+        localStorage.setItem("userChoice", userChoice)
+        signProfile.textContent = `${userChoice}`;
+    }
+
 }
 
 // Horoscope description
@@ -61,7 +66,7 @@ function getNasa() {
         .then(response => response.json())
         .then(response => {
             console.log(response);
-            let number = Math.floor(Math.random()*5)
+            let number = Math.floor(Math.random() * 5)
             console.log(response.collection.items[0].links[0]);
             let imageNasa = response.collection.items[number].links[0].href;
             //added DOM element to render description on the page
