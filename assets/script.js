@@ -66,11 +66,10 @@ function getNasa() {
         .then(response => response.json())
         .then(response => {
             console.log(response);
-            let number = Math.floor(Math.random() * 5)
+            let number = Math.floor(Math.random() * 10 + 5);
             console.log(response.collection.items[0].links[0]);
             let imageNasa = response.collection.items[number].links[0].href;
             //added DOM element to render description on the page
-            document.querySelector("#backgroundNasa").src = imageNasa;
             document.querySelector("body").style.backgroundImage = `url("${imageNasa}")`;
         })
         .catch(err => console.error(err));

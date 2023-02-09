@@ -1,22 +1,14 @@
 
 body{
     background-color: black;
+    padding: 40px;
 }
+
 #star-sign{
     font-family: 'Martel', serif;
     color: #BA38F2;
     font-size: 200px;
     font-family: 'Martel', serif;
-}
-/* navbar */
-button {
-    background-color: midnightblue;
-    border-color: midnightblue;
-    border-width: 10px;
-    border-radius: 10px; 
-    text-align: center;
-    text-decoration: none;
-
 }
 
 button:hover{
@@ -29,10 +21,21 @@ button:hover{
     padding: 20px;
 }
 
+button {
+    background-color: midnightblue;
+    border-color: midnightblue;
+    border-width: 10px;
+    border-radius: 10px; 
+    text-align: center;
+    text-decoration: none;
+}
+
 .button-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
+    margin: 50px;
     
 }
 
@@ -55,6 +58,11 @@ h1{
     font-family: 'Martel', serif;
     color: #F2F2F2;
     font-size: 30px;
+}
+
+.horoscope-container{
+    margin: 200px;
+    padding: 50px;
 }
 
 /* NASA */
