@@ -4,10 +4,11 @@ body{
     padding: 40px;
 }
 
+
 #star-sign{
     font-family: 'Martel', serif;
-    color: #BA38F2;
-    font-size: 200px;
+    color: #4353ab;
+    font-size: 150px;
     font-family: 'Martel', serif;
 }
 
@@ -15,19 +16,23 @@ button:hover{
     text-decoration: none;
 }
 
+#text-button {
+    color:white;
+    font-size: 40px;
+}
 .navbar{
-    background-color: midnightblue;
     color: white;
     padding: 20px;
+    border-bottom: #F2F2F2;
 }
 
 button {
-    background-color: midnightblue;
-    border-color: midnightblue;
-    border-width: 10px;
-    border-radius: 10px; 
+    background-color: rgba(0, 0, 0, 0);
     text-align: center;
     text-decoration: none;
+    border: none !important;
+    padding: 20px;
+    padding-inline: 30px;
 }
 
 .button-container{
@@ -43,10 +48,14 @@ h1{
     font-size: 80px;
 }
 /* description area */
-.card-body {
+.card-body.absolute {
     background: rgb(240,248,255);
-    background: linear-gradient(0deg, #4353ab 27%, #0C1940 100%);
+    background: linear-gradient(0deg, #4353ab63 27%, #0C1940 100%);
+    padding-right: 30px;
+    right: 8px;
+    
 }
+
 
 .subheading {
     font-family: 'Martel', serif;
