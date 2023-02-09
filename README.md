@@ -27,6 +27,13 @@ https://adeventastra.github.io/project1-piptambecten/
 <!-- screenshot and URL -->
 ![Screenshot of website.](images/Screenshot.png "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
 
+## Future Developments
+
+* Get NASA api to be refined to show only images of space or even just the planet or constellation that pertains to their sign. 
+* Polish off the design to look more streamlined
+* Improve the layout to be more user-friendly
+* Add a search history
+
 ## Licence
 MIT Licence
 

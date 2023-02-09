@@ -1,4 +1,3 @@
-// Rebecca's work navbar buttons
 //let startButton = document.querySelector("#start");
 
 let aries = document.querySelector("#aries");
