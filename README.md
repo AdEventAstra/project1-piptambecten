@@ -15,31 +15,31 @@ Our group will use everything we’ve learned to create a real-world front-end a
 * I WANT to see the horoscope outlook for my day
 * SO THAT I can view my predictions depending on my star sign.
 
+
 ## Technologies used
 
-Nasa and Aztro Server APIs
-Html, CSS, JavaScript, Bootstrap, jQuery, Google Fonts, GitHub
+* Nasa and Aztro Server APIs
+* Html, CSS, JavaScript, Bootstrap, jQuery, Google Fonts, GitHub
 
 ## Demo
-
-<!-- screenshot and URL -->
-URL of deployed application:
+* URL of deployed application:
 https://adeventastra.github.io/project1-piptambecten/
+<!-- screenshot and URL -->
+![Screenshot of website.](images/Screenshot.png "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
 
 ## Licence
 MIT Licence
 
 ## Authors
-Tamara Joniec
-Rebecca Sellers
-Pip Allen
-Tennisson Omovoh
+* Tamara Joniec
+* Rebecca Sellers
+* Pip Allen
+* Tennisson Omovoh
 
 ## References
-Google Fonts
-Nasa API: https://images-api.nasa.gov/search?q=planets
-Horoscope API: https://aztro.sameerkumar.website/?sign=undefined&day=today
+* Google Fonts
+* Nasa API: https://images-api.nasa.gov/search?q=planets
+* Horoscope API: https://aztro.sameerkumar.website/?sign=undefined&day=today
 
 ## Credits
-Martin William (TA)
-Dane Edwards (Instructor)
+* Martin William (TA)
