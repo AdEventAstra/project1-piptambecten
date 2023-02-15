@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
-
 </head>
 
 <body>
@@ -21,82 +20,45 @@
         <h1> AdEventAstra<br>| H O R O S C O P E S </h1>
     </nav>
     <br>
-    <!--WEBPAGE BUTTONS-->
-
+    
+    <!--Star sign links-->
     <div id="button-container" class="button-container">
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="aries">Aries (March 21 - April 19)</a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="taurus">Taurus (April 20 - May 20)</a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="gemini">Gemini (May 21 - June 20) </a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="cancer">Cancer (June 21 - July 22)</a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="leo">Leo (July 23 - August 22) </a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="virgo"> Virgo (September 23 - October 22) </a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="scorpio">Scorpio (October 23 - November 21)</a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="sagittarius">Sagittarius (November 22 - December 21)
-            </a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="capricorn">Capricorn (December 22 - January 19)</a>
-        </button>
-
-        <button>
-            <a href="#" role="button" id="text-button" data-sign="aquarius"> Aquarius (January 20 - February 18)</a>
-        </button>
-
-        <button><a href="#" role="button" id="text-button" data-sign="pisces">Pisces (February 19 - March 20)</a>
-        </button>
-
+        <a href="#" id="text-button" data-sign="aries">Aries (March 21 - April 19)</a>
+        <a href="#" role="button" id="text-button" data-sign="taurus">Taurus (April 20 - May 20)</a>
+        <a href="#" role="button" id="text-button" data-sign="gemini">Gemini (May 21 - June 20) </a>
+        <a href="#" role="button" id="text-button" data-sign="cancer">Cancer (June 21 - July 22)</a>
+        <a href="#" role="button" id="text-button" data-sign="leo">Leo (July 23 - August 22) </a>
+        <a href="#" role="button" id="text-button" data-sign="virgo"> Virgo (September 23 - October 22) </a>
+        <a href="#" role="button" id="text-button" data-sign="scorpio">Scorpio (October 23 - November 21)</a>
+        <a href="#" role="button" id="text-button" data-sign="sagittarius">Sagittarius (November 22 - December 21)</a>
+        <a href="#" role="button" id="text-button" data-sign="capricorn">Capricorn (December 22 - January 19)</a>
+        <a href="#" role="button" id="text-button" data-sign="aquarius"> Aquarius (January 20 - February 18)</a>
+        <a href="#" role="button" id="text-button" data-sign="pisces">Pisces (February 19 - March 20)</a>
     </div>
+
     <!-- star sign profile -->
     <div class="row">
         <div class="col-6">
             <div id="star-sign"></div>
         </div>
-        <!-- horoscope description -->
-        <div class="card-body w-50 h-100 col-6 absolute" id="horoscope-container">
+
+        <!-- Horoscope description -->
+        <div class="container-fluid card-body col-12" id="horoscope-container">
             <h2 class="subheading text-center">Daily Horoscope</h2>
             <br>
             <br>
-            <p class="card-text"></p>
+            <p class="card-text text-center"></p>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div>
-            </div>
         </div>
-
     </div>
-
+    <br>
     <div id="nasa-container">
 
-        <button id="nasaButton text-button">
-            <a target="_blank" href="https://www.nasa.gov/">Click here to go to Nasa</a>
+        <button class="button-nasa" role="button" id="text-button">
+            <a target="_blank" href="https://www.nasa.gov/">Go to Nasa</a>
         </button>
+
         <script type="text/javascript" src="./assets/script.js"></script>
 </body>
 </div>
