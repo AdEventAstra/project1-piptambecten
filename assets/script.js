@@ -1,6 +1,4 @@
-// Rebecca's work navbar buttons
-//let startButton = document.querySelector("#start");
-
+// global variables
 let aries = document.querySelector("#aries");
 let taurus = document.querySelector("#taurus");
 let gemini = document.querySelector("#gemini");
@@ -17,7 +15,6 @@ let pisces = document.querySelector("#pisces");
 horoscope();
 
 const signProfile = document.getElementById('star-sign');
-console.log(signProfile)
 let starsign = localStorage.getItem("userChoice")
 signProfile.textContent = starsign
 
@@ -30,7 +27,6 @@ function displayUserChoice(userChoice) {
         localStorage.setItem("userChoice", userChoice)
         signProfile.textContent = `${userChoice}`;
     }
-
 }
 
 // Horoscope description
@@ -43,9 +39,7 @@ function horoscope(userChoice) {
     )
         .then(response => response.json())
         .then(response => {
-            console.log(response);
             let description = response.description;
-            console.log(description)
             //added DOM element to render description on the page
             document.querySelector(".card-text").textContent = description;
         })
@@ -53,7 +47,6 @@ function horoscope(userChoice) {
 }
 
 document.querySelector(".button-container").addEventListener('click', function (event) {
-    console.log(event.target);
     let userChoice = event.target.dataset.sign;
     displayUserChoice(userChoice)
     horoscope(userChoice);
@@ -65,9 +58,7 @@ function getNasa() {
     fetch("https://images-api.nasa.gov/search?q=planets")
         .then(response => response.json())
         .then(response => {
-            console.log(response);
-            let number = Math.floor(Math.random() * 10 + 5);
-            console.log(response.collection.items[0].links[0]);
+            let number = Math.floor(Math.random() * 12 + 5);
             let imageNasa = response.collection.items[number].links[0].href;
             //added DOM element to render description on the page
             document.querySelector("body").style.backgroundImage = `url("${imageNasa}")`;
