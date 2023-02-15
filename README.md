@@ -28,7 +28,7 @@ https://adeventastra.github.io/project1-piptambecten/
 * Original version (MVP)
 ![Screenshot of website.](images/old-screenshot.png "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
 * New interface
-![Screenshot of website.](images/new-screenshot.png "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
+![Screenshot of website.](images/new-screenshot.jpg "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
 
 
 ## Licence
