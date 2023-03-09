@@ -26,9 +26,11 @@ Our group will use everything we’ve learned to create a real-world front-end a
 https://adeventastra.github.io/project1-piptambecten/
 <!-- screenshot and URL -->
 * Original version (MVP)
-![Screenshot of website.](images/old-screenshot.png "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
+![Screenshot of website.](images/old-screenshot.jpeg "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
 * New interface
 ![Screenshot of website.](images/new-screenshot.jpg "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
+* New interface
+![Screenshot of website.](images/new-screenshot-2.jpg "The webpage includes a navigation bar, a header image, and cards with text. There is an description section and a button to nasa webpage.")    
 
 
 ## Licence

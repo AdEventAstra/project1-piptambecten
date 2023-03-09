@@ -12,13 +12,10 @@ let aquarius = document.querySelector("#aquarius");
 let pisces = document.querySelector("#pisces");
 
 // star sign profile
-horoscope();
 
 const signProfile = document.getElementById('star-sign');
 let starsign = localStorage.getItem("userChoice")
 signProfile.textContent = starsign
-
-displayUserChoice()
 
 function displayUserChoice(userChoice) {
     if (!userChoice) {
@@ -28,38 +25,36 @@ function displayUserChoice(userChoice) {
         signProfile.textContent = `${userChoice}`;
     }
 }
-
+displayUserChoice()
 // Horoscope description
 
 function horoscope(userChoice) {
     userChoice = localStorage.getItem("userChoice");
-    fetch(`https://aztro.sameerkumar.website?sign=${userChoice}&day=today`,
-        { method: "POST" }
-    )
-        .then(response => response.json())
-        .then(response => {
-            let description = response.description;
-            //added DOM element to render description on the page
-            document.querySelector(".card-text").textContent = description;
-        })
-        .catch(err => console.error(err));
+    if (userChoice) {
+        fetch(`https://aztro.sameerkumar.website?sign=${userChoice}&day=today`,
+            { method: "POST" }
+        )
+            .then(response => response.json())
+            .then(response => {
+                let description = response.description;
+                //added DOM element to render description on the page
+                document.querySelector(".card-text").textContent = description;
+            })
+            .catch(err => console.error(err));
+    }
 }
-
 document.querySelector(".button-container").addEventListener('click', function (event) {
     let userChoice = event.target.dataset.sign;
     displayUserChoice(userChoice)
     horoscope(userChoice);
 })
 
-// Add event listener to the button
-document.getElementById("change-background-btn").addEventListener("click", getNasa);
-
 // Nasa API
 function getNasa() {
     fetch("https://images-api.nasa.gov/search?q=planets&media_type=image")
         .then(response => response.json())
         .then(response => {
-            let number = Math.floor(Math.random() * 34 + 5);
+            let number = Math.floor(Math.random() * 12 + 5);
             let imageNasa = response.collection.items[number].links[0].href.replace("thumb", "orig");
             //added DOM element to render description on the page
             document.querySelector("body").style.backgroundImage = `url("${imageNasa}")`;
@@ -67,5 +62,10 @@ function getNasa() {
         .catch(err => console.error(err));
 }
 
+// Call getNasa() when the page finishes loading
+window.addEventListener("load", getNasa);
+
+// Add event listener to the button
+document.getElementById("change-background-btn").addEventListener("click", getNasa);
 
 
