@@ -20,7 +20,6 @@
         <h1> AdEventAstra<br>| H O R O S C O P E S </h1>
     </nav>
     <br>
-
     <!--Star sign links-->
     <div id="button-container" class="button-container">
         <a href="#" id="text-button" data-sign="aries">Aries (March 21 - April 19)</a>
@@ -35,32 +34,26 @@
         <a href="#" role="button" id="text-button" data-sign="aquarius"> Aquarius (January 20 - February 18)</a>
         <a href="#" role="button" id="text-button" data-sign="pisces">Pisces (February 19 - March 20)</a>
     </div>
-
     <!-- star sign profile -->
     <div class="row">
         <div class="col-6">
             <div id="star-sign"></div>
         </div>
-
         <!-- Horoscope description -->
         <div class="container-fluid card-body col-12" id="horoscope-container">
             <h2 class="subheading text-center">Daily Horoscope</h2>
-            <br>
-            <br>
             <p class="card-text text-center"></p>
-            <br>
-            <br>
         </div>
     </div>
     <br>
     <div id="nasa-container">
-
+        <button id="change-background-btn">Change Background</button>
         <button class="button-nasa" role="button" id="text-button">
             <a target="_blank" href="https://www.nasa.gov/">Go to Nasa</a>
         </button>
-
-        <script type="text/javascript" src="./assets/script.js"></script>
+     </div>   
+        <script type="text/javascript" src="./assets/script.js">
+            horoscope(); // Call horoscope function on page load
+        </script>
 </body>
-</div>
-
 </html>
