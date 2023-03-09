@@ -34,7 +34,6 @@ function displayUserChoice(userChoice) {
 function horoscope(userChoice) {
     userChoice = localStorage.getItem("userChoice");
     fetch(`https://aztro.sameerkumar.website?sign=${userChoice}&day=today`,
-
         { method: "POST" }
     )
         .then(response => response.json())
@@ -52,18 +51,21 @@ document.querySelector(".button-container").addEventListener('click', function (
     horoscope(userChoice);
 })
 
+// Add event listener to the button
+document.getElementById("change-background-btn").addEventListener("click", getNasa);
+
 // Nasa API
-// https://images-api.nasa.gov/search?q=planets
 function getNasa() {
-    fetch("https://images-api.nasa.gov/search?q=planets")
+    fetch("https://images-api.nasa.gov/search?q=planets&media_type=image")
         .then(response => response.json())
         .then(response => {
-            let number = Math.floor(Math.random() * 12 + 5);
-            let imageNasa = response.collection.items[number].links[0].href;
+            let number = Math.floor(Math.random() * 34 + 5);
+            let imageNasa = response.collection.items[number].links[0].href.replace("thumb", "orig");
             //added DOM element to render description on the page
             document.querySelector("body").style.backgroundImage = `url("${imageNasa}")`;
         })
         .catch(err => console.error(err));
 }
-getNasa();
+
+
 
